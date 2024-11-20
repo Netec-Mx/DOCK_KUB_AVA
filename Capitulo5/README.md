@@ -8,7 +8,7 @@ Al finalizar la práctica, serás capaz de:
 
 ## Objetivo Visual
 
-![diagrama1](../images/Capítulo2/cap2_obt_final.png)
+![diagrama1](../images/Capitulo2/cap2_obt_final.png)
 
 ## Duración aproximada:
 - 45 minutos.
@@ -59,11 +59,11 @@ Paso 1. Ejecutar comando para crear los multiples contenedores
  kubectl apply -f deployment-email.yaml
 ```
 
-![diagrama1](../images/Capítulo5/Cap5_run_deploy.png)
+![diagrama1](../images/Capitulo5/Cap5_run_deploy.png)
 
 Paso 2. Validar el log de la creacion del pod
 
-![diagrama1](../images/Capítulo5/Cap5_run_deploy_1.png)
+![diagrama1](../images/Capitulo5/Cap5_run_deploy_1.png)
 
 ### shell
 ```shell
@@ -84,7 +84,7 @@ Paso 2. Validar el log de la creacion del pod
 ```shell
   kubectl port-forward deployment/db-deployment 3306:3306t
 ```
-![diagrama1](../images/Capítulo5/Cap5_run_deploy_2.png)
+![diagrama1](../images/Capitulo5/Cap5_run_deploy_2.png)
 ### Resultado esperado
 
-![diagrama1](../images/Capítulo5/Cap5_esperado.png)
+![diagrama1](../images/Capitulo5/Cap5_esperado.png)

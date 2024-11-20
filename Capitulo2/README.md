@@ -8,7 +8,7 @@ Al finalizar la práctica, serás capaz de:
 
 ## Objetivo Visual
 
-![diagrama1](../images/Capítulo2/cap2_obt_final.png)
+![diagrama1](../images/Capitulo2/cap2_obt_final.png)
 
 ## Duración aproximada:
 - 45 minutos.
@@ -18,17 +18,17 @@ Al finalizar la práctica, serás capaz de:
 
 Paso 1. Creamos el deployment-email.yaml
 
-![diagrama1](../images/Capítulo2/cap2_manifiesto1.png)
+![diagrama1](../images/Capitulo2/cap2_manifiesto1.png)
 
 Paso 2. Crear manifiesto para exponer servicio
 
-![diagrama1](../images/Capítulo2/cap2_manifiesto2.png)
+![diagrama1](../images/Capitulo2/cap2_manifiesto2.png)
 
 ### Tarea 2. Desplegar servicio
 
 Paso 1. Ejecutamos el comando para crear el pod
 
-![diagrama1](../images/Capítulo2/cap2_deploy1.png)
+![diagrama1](../images/Capitulo2/cap2_deploy1.png)
 
 ### shell
 ```shell
@@ -37,7 +37,7 @@ Paso 1. Ejecutamos el comando para crear el pod
 
 Paso 2. Crear el service
 
-![diagrama1](../images/Capítulo2/cap2_deploy2.png)
+![diagrama1](../images/Capitulo2/cap2_deploy2.png)
 
 ### shell
 ```shell
@@ -46,7 +46,7 @@ Paso 2. Crear el service
 
 Paso 3. validar creacion del servicio
 
-![diagrama1](../images/Capítulo2/cap2_deploy3.png)
+![diagrama1](../images/Capitulo2/cap2_deploy3.png)
 
 ### shell
 ```shell
@@ -55,4 +55,4 @@ Paso 3. validar creacion del servicio
 
 
 ### Resultado esperado
-![diagrama1](../images/Capítulo2/cap2_obt_final.png)
+![diagrama1](../images/Capitulo2/cap2_obt_final.png)

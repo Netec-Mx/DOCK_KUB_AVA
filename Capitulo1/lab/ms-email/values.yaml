@@ -1,0 +1,24 @@
+replicaCount: 1
+
+image:
+  repository: daniel0223/netec_email
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8081
+
+containerPort: 8081
+
+serviceAccount:
+  create: false
+
+ingress:
+  enabled: false  # Cambia a true si necesitas usar Ingress en el futuro
+
+autoscaling:
+  enabled: false  # Cambia a true si quieres habilitar el autoescalado
+  minReplicas: 1
+  maxReplicas: 5
+  targetCPUUtilizationPercentage: 80

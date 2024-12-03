@@ -2,8 +2,8 @@
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
-- Crear un Microservicio dedicado a la seguridad y permita la creación de usuarios   
-- Manejo de JWT
+- Crear un Microservicio dedicado a la seguridad y permita la creación de usuarios. 
+- Manejo de JWT.
 - Crear un microservicio basado en Spring security para la gestión de usuarios con una base de datos en memoria. 
 
 ## Duración aproximada:

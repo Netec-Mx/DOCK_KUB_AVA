@@ -1,21 +1,17 @@
-# Microservicio Seguridad
-
-
-Crear un microservicio basado en Spring security para la gestión de usuarios con una base de datos en memoria
-
+# Práctica 3. Microservicio Seguridad
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
 - Crear un Microservicio dedicado a la seguridad y permita la creación de usuarios   
 - Manejo de JWT
-
+- Crear un microservicio basado en Spring security para la gestión de usuarios con una base de datos en memoria. 
 
 ## Duración aproximada:
 - 80 minutos.
 
-### Tarea 1. Creacion microservicio
+### Tarea 1. Creacion de microservicio
 
-Paso 1. ingresar al link https://start.spring.io/ para crear el servicio
+Paso 1. Ingresar al link https://start.spring.io/ para crear el servicio.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_1.png)
 

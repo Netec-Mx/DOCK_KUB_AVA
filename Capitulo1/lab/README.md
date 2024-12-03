@@ -1,11 +1,11 @@
 # Laboratorio 
 
-## Objetivo del laboratorio
+## Objetivo del laboratorio:
 Al finalizar la práctica, serás capaz de:
 - Crear un chart personalizable con Helm.
 - Desplegar servicios con Helm.
 
-## Objetivo visual 
+## Objetivo visual: 
 Crear un chart personalizable que tenga como objetivo desplegar el microservicio de correos electrónicos por medio de Helm.
 ![diagrama1](../../images/lab_email_with_Helm.png)
 
@@ -14,12 +14,12 @@ Crear un chart personalizable que tenga como objetivo desplegar el microservicio
   
 ## Instrucciones 
 
-### Tarea 1. Creación de un Chart
+### Tarea 1. Creación de un chart
 Paso 1. Crear una nueva carpeta vacia con el nombre LAB.
 
 Paso 2. Abrir la carpeta LAB en Visual Code.
 
-Paso 3. Ejecutar el comando 'helm create ms-email' y se generará el Chart automáticamente.
+Paso 3. Ejecutar el comando 'helm create ms-email' y se generará el chart automáticamente.
 
 ### shell
 ```shell
@@ -85,7 +85,7 @@ spec:
 
 Paso 1. Abrir el archivo `templates/service.yaml`.
 
-Paso 2. Configuramos el service para definir los componentes del clúster que tienen acceso en el el kubernetes.
+Paso 2. Configuramos el service para definir los componentes del clúster que tienen acceso en el kubernetes.
 ### YAML
 ```
 # templates/service.yaml
@@ -104,9 +104,9 @@ spec:
  selector:
    app: {{ .Release.Name }}-ms-email
 ```
-### Tarea 5. Desplegar el Chart
+### Tarea 5. Desplegar el chart
 
-Paso 1. Ubicarnos en la ruta donde creamos el Chart y desplegar el servicio configurado.
+Paso 1. Ubicarnos en la ruta donde creamos el chart y desplegar el servicio configurado.
 
 ### shell
 ```shell

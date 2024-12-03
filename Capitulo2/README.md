@@ -7,7 +7,7 @@ Al finalizar la práctica, serás capaz de:
 - Creacion de manifiestos YAML para desplegar en k8s.
 - Configuracion proyecto backend.
 
-## Objetivo Visual
+## Objetivo visual
 
 ![diagrama1](../images/Capitulo2/cap2_obt_final.png)
 

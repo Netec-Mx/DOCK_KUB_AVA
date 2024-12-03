@@ -49,10 +49,12 @@ Paso 1. Crear el repositorio en Docker Hub.
 
 ![diagrama1](../../images/Capitulo%201/practca1_docker_1.png)
 
-Paso 2. Nombrar Repositoruo en Docker.
+
+Paso 2. Nombrar el repositorio en Docker.
 
 ![diagrama1](../../images/Capitulo%201/practca1_docker_2.png)
 ![diagrama1](../../images/Capitulo%201/practca1_docker_3.png)
+
 
 Paso 3. Crear la imagen de Docker del email.
 
@@ -62,6 +64,7 @@ Paso 3. Crear la imagen de Docker del email.
 ```
 
 ![diagrama1](../../images/Capitulo%201/practca1_docker_4.png)
+
 
 Paso 4. Taggear la imagen en el Docker Hub.
 
@@ -92,7 +95,8 @@ Paso 1. Crear Task en el servicio de ECS.
 
 ![diagrama1](../../images/Capitulo%201/ECS_1.png)
 
-Paso 2. Agregar un nombre a la tarea y seleccionar fargate serveless.
+
+Paso 2. Agregar un nombre a la tarea y seleccionar Fargate serveless.
 
 ![diagrama1](../../images/Capitulo%201/ECS_2.png)
 
@@ -131,31 +135,38 @@ Paso 9. Crear el clúster.
 
 ![diagrama1](../../images/Capitulo%201/ECS_9.png)
 
+
 Paso 10. Crear el clúster
 
 ![diagrama1](../../images/Capitulo%201/ECS_10.png)
 
-Paso 11. Desplegar con fargate y última versión.
+
+Paso 11. Desplegar con Fargate y última versión.
 
 ![diagrama1](../../images/Capitulo%201/ECS_11.png)
+
 
 Paso 12. Crear un nuevo Segurity Group, dando a acceso al tráfico de entrada.
 
 ![diagrama1](../../images/Capitulo%201/ECS_12.png)
 
-Paso 13. Seleccionar la tarea que creamos en pasos anteriores y creamos
+
+Paso 13. Seleccionar la tarea que creamos en pasos anteriores y creamos.
 
 ![diagrama1](../../images/Capitulo%201/ECS_13.png)
 
 ![diagrama1](../../images/Capitulo%201/ECS_14.png)
 
-Paso 14 En el cluster ubicamos la la ip publica para realizar la petición del servicio
+
+Paso 14. En el clúster ubicamos la IP pública para realizar la petición del servicio.
 
 ![diagrama1](../../images/Capitulo%201/ECS_15.png)
 
-Paso 15.  Prueba postman
+
+Paso 15.  Prueba postman.
 
 ![diagrama1](../../images/Capitulo%201/ECS_16.png)
+
 
 ### Resultado esperado
 ![diagrama1](../../images/Capitulo%201/ECS_16.png)

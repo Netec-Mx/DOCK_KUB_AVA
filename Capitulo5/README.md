@@ -5,7 +5,7 @@ Al finalizar la práctica, serás capaz de:
 -Crear un manifiesto en kubernetes que permita desplegar múltiples servicios.
 - Realizar el despliegue de dos bases de datos en un solo manifiesto.
 
-## Objetivo Visual
+## Objetivo visual
 
 ![diagrama1](../images/Capitulo2/cap2_obt_final.png)
 
@@ -49,9 +49,9 @@ spec:
         - containerPort: 5432
 ```
 
-### Tarea 2. Desplegar multiples contenedores
+### Tarea 2. Desplegar múltiples contenedores
 
-Paso 1. Ejecutar comando para crear los multiples contenedores
+Paso 1. Ejecutar comando para crear los múltiples contenedores.
 
 ### shell
 ```shell
@@ -60,7 +60,7 @@ Paso 1. Ejecutar comando para crear los multiples contenedores
 
 ![diagrama1](../images/Capitulo5/Cap5_run_deploy.png)
 
-Paso 2. Validar el log de la creacion del pod
+Paso 2. Validar el log de la creacion del Pod.
 
 ![diagrama1](../images/Capitulo5/Cap5_run_deploy_1.png)
 
@@ -71,13 +71,13 @@ Paso 2. Validar el log de la creacion del pod
 
 ### NOTA IMPORTANTE
 
-1 . Si se tarda en crear el contenedor primero descargar la imagen con el siguiente comando
+1 . Si se tarda en crear el contenedor, primero descargar la imagen con el siguiente comando.
 ### shell
 ```shell
  docker pull postgres:latest
 ```
 
-2. PAra obtneer la Ip de los pod desplegados
+2. Para obtener la IP de los Pods desplegados.
 
 ### shell
 ```shell

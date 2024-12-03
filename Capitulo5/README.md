@@ -15,7 +15,7 @@ Al finalizar la práctica, serás capaz de:
 ## Instrucciones
 ### Tarea 1. Creando manifiesto
 
-Paso 1. Crear el ´lab5.yaml´.
+Paso 1. Crear el lab5.yaml.
 
 ### YAML
 ```YAML

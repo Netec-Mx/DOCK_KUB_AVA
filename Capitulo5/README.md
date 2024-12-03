@@ -2,7 +2,7 @@
 
 ## Objetivo del laboratorio:
 Al finalizar la práctica, serás capaz de:
--Crear un manifiesto en kubernetes que permita desplegar múltiples servicios.
+- Crear un manifiesto en kubernetes que permita desplegar múltiples servicios.
 - Realizar el despliegue de dos bases de datos en un solo manifiesto.
 
 ## Objetivo visual

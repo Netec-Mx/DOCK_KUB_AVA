@@ -2,7 +2,8 @@
 
 ## Objetivo del laboratorio:
 Al finalizar la práctica, serás capaz de:
--Desplegar servicio email en un minikube de Kubernetes.
+
+- Desplegar servicio email en un minikube de Kubernetes.
 - Creacion de manifiestos YAML para desplegar en k8s
 - Configuracion proyecto back end
 

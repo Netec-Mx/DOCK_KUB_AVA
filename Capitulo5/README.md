@@ -1,10 +1,9 @@
-# Práctica 5.
-
-Crear un manifiesto en kubernetes que permita desplegar múltiples servicios
+# Práctica 5. Múltiples contenedores
 
 ## Objetivo del laboratorio:
 Al finalizar la práctica, serás capaz de:
-- Realizar el despliegue de dos bases de datos en un solo manifiesto
+-Crear un manifiesto en kubernetes que permita desplegar múltiples servicios.
+- Realizar el despliegue de dos bases de datos en un solo manifiesto.
 
 ## Objetivo Visual
 
@@ -12,11 +11,11 @@ Al finalizar la práctica, serás capaz de:
 
 ## Duración aproximada:
 - 45 minutos.
+  
 ## Instrucciones
-
 ### Tarea 1. Creando manifiesto
 
-Paso 1. Creamos el lab5.yaml
+Paso 1. Crear el ´lab5.yaml´.
 
 ### YAML
 ```YAML

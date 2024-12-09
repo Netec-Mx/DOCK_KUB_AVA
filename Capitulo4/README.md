@@ -8,7 +8,7 @@ Al finalizar la práctica, serás capaz de:
 ## Objetivo Visual 
 Crear un diagrama de arquitectura de Kubernetes con una alta disponibilidad junto con sus componentes
 
-![imagen resultado](../images/Capitulo%204/diagrama_k8s.png)
+![imagen resultado](../images/Capitulo4/diagrama_k8s.png)
 
 ## Duración aproximada:
 - 20 minutos.

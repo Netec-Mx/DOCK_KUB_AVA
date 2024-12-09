@@ -2,48 +2,50 @@
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
-- Crear un Microservicio dedicado a la seguridad y permita la creación de usuarios. 
-- Manejo de JWT.
-- Crear un microservicio basado en Spring security para la gestión de usuarios con una base de datos en memoria. 
+- Crear un microservicio dedicado a la seguridad, permitiendo la creación de usuarios.
+- Implementar el manejo de JWT (JSON Web Tokens) para autenticación.
+- Configurar un microservicio basado en Spring Security con gestión de usuarios utilizando una base de datos en memoria.
 
 ## Duración aproximada:
 - 80 minutos.
 
 ### Tarea 1. Creacion de microservicio
 
-Paso 1. Ingresar al link https://start.spring.io/ para crear el servicio.
+Configurar un proyecto Spring Boot que implemente las funcionalidades de seguridad necesarias para gestionar usuarios y autenticar mediante JWT.
+
+Paso 1. Accede al enlace https://start.spring.io/ y genera un proyecto con las dependencias necesarias, como Spring Web, Spring Security y Spring Data JPA.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_1.png)
 
-Paso 2. Agregar JWT en el `POM.XML`.
+Paso 2. Añade las dependencias de JWT necesarias para manejar la creación y validación de tokens.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_2.png)
 
-Paso 3. Crear estructura del proyecto.
+Paso 3. Organiza el proyecto en paquetes, por ejemplo: entity, repository, security, service, controller, y dto.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_3.png)
 
-Paso 4. Crear entidad AuthUser.
+Paso 4. Define una clase de entidad que represente a los usuarios en el sistema, con atributos como username, password, y roles.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_4.png)
 
-Paso 5. Crear el Repository AuthUser.
+Paso 5. Implementa un repositorio para manejar operaciones de persistencia relacionadas con la entidad AuthUser.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_5.png)
 
-Paso 6. Creacion DTO AuthUserDto
+Paso 6. Este DTO representará los datos del usuario que serán enviados entre el cliente y el servidor.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_6.png)
 
-Paso 7. Creacion DTO AuthUserDto.
+Paso 7. Este DTO contendrá los datos necesarios para solicitudes como el inicio de sesión.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_7.png)
 
-Paso 8. Creacion DTO RequestDto
+Paso 8. Define un PasswordEncoder para gestionar el cifrado de contraseñas.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_8.png)
 
-Paso 9. Crear clase PasswordEncoderConfig en security.
+Paso 9. Implementa validaciones de rutas para verificar permisos según los roles del usuario.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_9.png)
 
@@ -102,30 +104,37 @@ Paso 22. Crear método NewUserDTO.
 
 ### Tarea 2. Ajuste controller
 
-Paso 1. Método para guardar usuario en el  AuthService.
+Paso 1. Implementa un método en AuthService que permita guardar usuarios en la base de datos.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_23.png)
 
-Paso 2. Método para Inicio de sesion  en el  AuthService.
+Paso 2. Define un método en AuthService que genere un token JWT al autenticar un usuario válido.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_24.png)
 
-Paso 3. Creación Controller AuthController.
+Paso 3. Expón los endpoints necesarios para las operaciones de autenticación y gestión de usuarios.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_25.png)
 
-Paso 4. Método Login  AuthController.
+Paso 4. El método debe aceptar credenciales de usuario y devolver un token JWT si son válidas.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_26.png)
 
-Paso 5. Método Validate AuthController.
+Paso 5. Agrega un endpoint en el controlador para validar si un token JWT sigue siendo válido.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_27.png)
 
-Paso 6. Método create user.
+Paso 6. Agrega un endpoint para permitir la creación de nuevos usuarios.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_28.png)
 
 
 ### Resultado esperado
+
+Al finalizar la práctica, tendrás un microservicio funcional que permita:
+
+- Crear usuarios en una base de datos en memoria.
+- Autenticar usuarios utilizando JWT.
+- Exponer endpoints seguros para la gestión de usuarios.
+- 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_29.png)

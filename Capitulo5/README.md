@@ -2,10 +2,13 @@
 
 ## Objetivo del laboratorio:
 Al finalizar la práctica, serás capaz de:
-- Crear un manifiesto en kubernetes que permita desplegar múltiples servicios.
-- Realizar el despliegue de dos bases de datos en un solo manifiesto.
+- Crear un manifiesto en Kubernetes para desplegar múltiples servicios dentro de un mismo pod.
+- Configurar y desplegar dos bases de datos (MySQL y PostgreSQL) en un único manifiesto YAML.
 
 ## Objetivo visual
+
+Desplegar un pod en Kubernetes que aloje dos bases de datos configuradas y funcionales.
+
 
 ![diagrama1](../images/Capitulo2/cap2_obt_final.png)
 
@@ -15,7 +18,7 @@ Al finalizar la práctica, serás capaz de:
 ## Instrucciones
 ### Tarea 1. Creando manifiesto
 
-Paso 1. Crear el `lab5.yaml`.
+Paso 1. Crear el `lab5.yaml`. Define un manifiesto YAML que describa un pod con dos contenedores: uno para MySQL y otro para PostgreSQL. Configura las variables de entorno necesarias para ambas bases de datos y especifica los puertos expuestos.
 
 ### YAML
 ```YAML
@@ -51,7 +54,7 @@ spec:
 
 ### Tarea 2. Desplegar múltiples contenedores
 
-Paso 1. Ejecutar comando para crear los múltiples contenedores.
+Paso 1. Ejecutar comando para crear los múltiples contenedores. Utiliza el siguiente comando para aplicar el manifiesto y crear el pod que contiene los dos contenedores:
 
 ### shell
 ```shell
@@ -60,7 +63,8 @@ Paso 1. Ejecutar comando para crear los múltiples contenedores.
 
 ![diagrama1](../images/Capitulo5/Cap5_run_deploy.png)
 
-Paso 2. Validar el log de la creacion del Pod.
+Paso 2. Usa el comando kubectl describe para inspeccionar los detalles del pod y verificar que los contenedores se hayan creado correctamente:
+
 
 ![diagrama1](../images/Capitulo5/Cap5_run_deploy_1.png)
 

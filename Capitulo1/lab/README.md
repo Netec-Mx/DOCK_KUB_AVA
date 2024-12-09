@@ -3,10 +3,10 @@
 ## Objetivo del laboratorio:
 Al finalizar la práctica, serás capaz de:
 - Crear un chart personalizable con Helm.
-- Desplegar servicios con Helm.
+- Desplegar un microservicio utilizando Helm, configurando correctamente los manifiestos necesarios.
 
 ## Objetivo visual: 
-Crear un chart personalizable que tenga como objetivo desplegar el microservicio de correos electrónicos por medio de Helm.
+Diseñar y desplegar un chart Helm que permita gestionar el microservicio de correos electrónicos de manera eficiente y reutilizable.
 ![diagrama1](../../images/lab_email_with_Helm.png)
 
 ## Duración aproximada:
@@ -15,11 +15,11 @@ Crear un chart personalizable que tenga como objetivo desplegar el microservicio
 ## Instrucciones 
 
 ### Tarea 1. Creación de un chart
-Paso 1. Crear una nueva carpeta vacia con el nombre LAB.
+Paso 1. Crear una nueva carpeta vacía con el nombre LAB
 
-Paso 2. Abrir la carpeta LAB en Visual Code.
+Paso 2. Abrir la carpeta LAB en Visual Studio Code.
 
-Paso 3. Ejecutar el comando 'helm create ms-email' y se generará el chart automáticamente.
+Paso 3. Ejecutar el comando helm create ms-email para generar automáticamente la estructura básica del chart. Este comando crea carpetas preconfiguradas que facilitan la personalización del despliegue.
 
 ### shell
 ```shell
@@ -30,11 +30,13 @@ helm create ms-email
 
 ### Tarea 2. Modificar el manifiesto values.yaml
 
+Personalizar los valores por defecto del chart para definir las réplicas, la imagen del contenedor y el puerto del servicio.
+
 Paso 1. Abrir el archivo `values.yaml`.
 
 Paso 2. Crear una sola replica del servicio `replicaCount = 1`.
 
-Paso 3. La imagen a utilizar va a ser. 
+Paso 3. Especificar los valores para la imagen del contenedor, tipo de servicio y puertos: 
 ### YAML
 ```
 replicaCount: 1
@@ -55,9 +57,11 @@ containerPort: 8081
 
 ### Tarea 3. Modificar el manifiesto deployment.yaml
 
+Configurar el manifiesto de despliegue (deployment.yaml) para utilizar los valores definidos en values.yaml.
+
 Paso 1. Abrir el archivo templates/deployment.yaml y ajustarlo.
 
-Paso 2. La imagen a utilizar va a ser.
+Paso 2. Ajustar la configuración de despliegue para utilizar los parámetros definidos:
 ### YAML
 ```
 apiVersion: apps/v1
@@ -83,9 +87,11 @@ spec:
 
 ### Tarea 4. Modificar el manifiesto service.yaml
 
+Configurar el servicio (service.yaml) para exponer el microservicio y definir el acceso desde el clúster.
+
 Paso 1. Abrir el archivo `templates/service.yaml`.
 
-Paso 2. Configuramos el service para definir los componentes del clúster que tienen acceso en el kubernetes.
+Paso 2. Configurar el servicio para usar un puerto accesible desde fuera del clúster
 ### YAML
 ```
 # templates/service.yaml
@@ -106,7 +112,9 @@ spec:
 ```
 ### Tarea 5. Desplegar el chart
 
-Paso 1. Ubicarnos en la ruta donde creamos el chart y desplegar el servicio configurado.
+Realizar el despliegue del microservicio utilizando Helm y verificar que se haya implementado correctamente.
+
+Paso 1. Dirigirse a la ruta donde se encuentra el chart ms-email y ejecutar el comando para instalar el chart
 
 ### shell
 ```shell
@@ -115,7 +123,7 @@ Paso 1. Ubicarnos en la ruta donde creamos el chart y desplegar el servicio conf
 
 ![imagen resultado](../../images/LAB_INSTALL.png)
 
-Paso 1. Validar despliegue.
+Paso 1. Validar que el despliegue se completó correctamente verificando los recursos creados
 
 ### shell
 ```shell

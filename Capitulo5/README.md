@@ -18,7 +18,7 @@ Desplegar un pod en Kubernetes que aloje dos bases de datos configuradas y funci
 ## Instrucciones
 ### Tarea 1. Creando manifiesto
 
-Paso 1. Crear el `lab5.yaml`. Define un manifiesto YAML que describa un pod con dos contenedores: uno para MySQL y otro para PostgreSQL. Configura las variables de entorno necesarias para ambas bases de datos y especifica los puertos expuestos.
+Paso 1. Crear el `lab5.yaml`. Definir un manifiesto YAML que describa un pod con dos contenedores: uno para MySQL y otro para PostgreSQL. Configurar las variables de entorno necesarias para ambas bases de datos y especificar los puertos expuestos.
 
 ### YAML
 ```YAML
@@ -54,7 +54,7 @@ spec:
 
 ### Tarea 2. Desplegar múltiples contenedores
 
-Paso 1. Ejecutar comando para crear los múltiples contenedores. Utiliza el siguiente comando para aplicar el manifiesto y crear el pod que contiene los dos contenedores:
+Paso 1. Ejecutar el comando para crear los múltiples contenedores. Utilizar el siguiente comando para aplicar el manifiesto y crear el pod que contiene los dos contenedores:
 
 ### shell
 ```shell
@@ -63,7 +63,7 @@ Paso 1. Ejecutar comando para crear los múltiples contenedores. Utiliza el sigu
 
 ![diagrama1](../images/Capitulo5/Cap5_run_deploy.png)
 
-Paso 2. Usa el comando kubectl describe para inspeccionar los detalles del pod y verificar que los contenedores se hayan creado correctamente:
+Paso 2. Usar el comando kubectl describe para inspeccionar los detalles del pod y verificar que los contenedores se hayan creado correctamente:
 
 
 ![diagrama1](../images/Capitulo5/Cap5_run_deploy_1.png)

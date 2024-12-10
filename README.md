@@ -13,7 +13,14 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 ---
  
 ## Índice:
- - [Práctica 1. Creación de Servicio ECS.](./Capitulo1/practica 1/README.md)
+ - [Práctica 1.1 Creación de Servicio ECS.](./Capitulo1/Capitulo1/lab/README.md)
+   - **Descripción**:
+   - Crear un chart personalizable con Helm.
+   - Desplegar servicios con Helm.
+   - Crear un chart personalizable que tenga como objetivo desplegar el microservicio de correos electrónicos por medio de Helm. 
+   - ⏱️ **Duración estimada**: 30 minutos.
+
+- [Práctica 1.2 Creación de Servicio ECS.](./Capitulo1/practica 1/README.md)
    - **Descripción**:
    - Desplegar el servicio de Emails en ECS.
    - Realizar el despliegue de un servicio de back-end que envía correos electrónicos. 

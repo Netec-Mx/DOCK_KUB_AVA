@@ -16,7 +16,7 @@ El objetivo visual es desplegar un servicio de correos electrónicos completamen
 ## Instrucciones 
 
 ### Tarea 1. Configuracion token servicio email
-Paso 1. En el archivo application.properties, ubicar la variable spring.mail.password. Esta será utilizada para almacenar el token de envío de correos electrónicos.
+Paso 1. En el archivo `application.properties`, ubicar la variable spring.mail.password. Esta será utilizada para almacenar el token de envío de correos electrónicos.
 
 ![diagrama1](../../images/Capitulo%201/practica1_application_properties.png)
 
@@ -28,7 +28,7 @@ Paso 3. Crear un nuevo token asignándole un nombre.
 
 ![diagrama1](../../images/Capitulo%201/practica1_gmial_1.png)
 
-Paso 4. Generar el token y reemplazarlo en el archivo application.properties.
+Paso 4. Generar el token y reemplazarlo en el archivo `application.properties`.
 
 ![diagrama1](../../images/Capitulo%201/practica1_token_1.png)
 
@@ -37,7 +37,7 @@ Paso 5. Crear el archivo Dockerfile para preparar el servicio para su despliegue
 
 ![diagrama1](../../images/Capitulo%201/practica1_dockerfile.png)
 
-Paso 6. Generar el artefacto de la aplicación ejecutando los comandos clean y package con Maven.
+Paso 6. Generar el artefacto de la aplicación ejecutando los comandos **clean** y **package** con Maven.
 
 ![diagrama1](../../images/Capitulo%201/practica1_mvn.png)
 

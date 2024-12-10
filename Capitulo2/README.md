@@ -20,7 +20,7 @@ El objetivo es lograr un despliegue exitoso del servicio de correos electrónico
 
 ### Tarea 1. Configurando manifiesto
 
-Paso 1. Crear el archivo deployment-email.yaml
+Paso 1. Crear el archivo `deployment-email.yaml`.
 Este manifiesto se utiliza para describir el despliegue del servicio, incluyendo la cantidad de réplicas y la imagen del contenedor que se utilizará. Asegúrate de que el manifiesto incluya configuraciones como el selector de etiquetas y la especificación del contenedor.
 
 
@@ -34,7 +34,7 @@ Paso 2. Crear manifiesto para exponer el servicio. Este manifiesto define el ser
 
 Crear y desplegar los recursos definidos en los manifiestos YAML dentro del clúster de Minikube.
 
-Paso 1. Ejecutar el siguiente comando para aplicar el manifiesto y crear el pod en Kubernetes
+Paso 1. Ejecutar el siguiente comando para aplicar el manifiesto y crear el pod en Kubernetes.
 
 ![diagrama1](../images/Capitulo2/cap2_deploy1.png)
 

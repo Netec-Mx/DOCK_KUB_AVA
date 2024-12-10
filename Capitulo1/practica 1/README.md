@@ -11,7 +11,7 @@ El objetivo visual es desplegar un servicio de correos electrónicos completamen
 ![diagrama1](../../images/Capitulo%201/practica1_objetivo.png)
 
 ## Duración aproximada:
-- 60 minutos.
+- 30 minutos.
   
 ## Instrucciones 
 

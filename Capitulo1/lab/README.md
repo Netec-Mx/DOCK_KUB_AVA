@@ -15,11 +15,11 @@ Diseñar y desplegar un chart Helm que permita gestionar el microservicio de cor
 ## Instrucciones 
 
 ### Tarea 1. Creación de un chart
-Paso 1. Crear una nueva carpeta vacía con el nombre LAB
+Paso 1. Crear una nueva carpeta vacía con el nombre LAB.
 
 Paso 2. Abrir la carpeta LAB en Visual Studio Code.
 
-Paso 3. Ejecutar el comando helm create ms-email para generar automáticamente la estructura básica del chart. Este comando crea carpetas preconfiguradas que facilitan la personalización del despliegue.
+Paso 3. Ejecutar el comando `helm create ms-email` para generar automáticamente la estructura básica del chart. Este comando crea carpetas preconfiguradas que facilitan la personalización del despliegue.
 
 ### shell
 ```shell
@@ -87,7 +87,7 @@ spec:
 
 ### Tarea 4. Modificar el manifiesto service.yaml
 
-Configurar el servicio (service.yaml) para exponer el microservicio y definir el acceso desde el clúster.
+Configurar el servicio `(service.yaml)` para exponer el microservicio y definir el acceso desde el clúster.
 
 Paso 1. Abrir el archivo `templates/service.yaml`.
 
@@ -114,7 +114,7 @@ spec:
 
 Realizar el despliegue del microservicio utilizando Helm y verificar que se haya implementado correctamente.
 
-Paso 1. Dirigirse a la ruta donde se encuentra el chart ms-email y ejecutar el comando para instalar el chart
+Paso 1. Dirigirse a la ruta donde se encuentra el chart ms-email y ejecutar el comando para instalar el chart.
 
 ### shell
 ```shell
@@ -123,7 +123,7 @@ Paso 1. Dirigirse a la ruta donde se encuentra el chart ms-email y ejecutar el c
 
 ![imagen resultado](../../images/LAB_INSTALL.png)
 
-Paso 1. Validar que el despliegue se completó correctamente verificando los recursos creados
+Paso 1. Validar que el despliegue se completó correctamente verificando los recursos creados.
 
 ### shell
 ```shell

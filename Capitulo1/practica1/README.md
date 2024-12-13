@@ -6,7 +6,7 @@ Al finalizar la práctica, serás capaz de:
 - Configurar correctamente una cuenta para el envío de correos electrónicos.
 - Dockerizar un servicio de backend para facilitar su despliegue.
 
-## Objetivo Visual 
+## Objetivo visual 
 El objetivo visual es desplegar un servicio de correos electrónicos completamente funcional utilizando Docker y ECS.
 ![diagrama1](../../images/Capitulo%201/practica1_objetivo.png)
 
@@ -102,12 +102,12 @@ Paso 1. Crear una tarea (Task) en el servicio ECS.
 ![diagrama1](../../images/Capitulo%201/ECS_1.png)
 
 
-Paso 2. se configura una definición de tarea en Amazon ECS con el nombre email_task_definition. Se selecciona AWS Fargate como el tipo de ejecución, lo que permite utilizar un entorno serverless para contenedores. Además, se especifican los requisitos de infraestructura: sistema operativo Linux, 1 vCPU, 3 GB de memoria y el modo de red awsvpc para garantizar la conectividad de la tarea.
+Paso 2. Configurar una definición de tarea en Amazon ECS con el nombre **email_task_definition**. Seleccionar AWS Fargate como el tipo de ejecución, lo que permite utilizar un entorno serverless para contenedores. Además, especificar los requisitos de infraestructura: sistema operativo Linux, 1 vCPU, 3 GB de memoria y el modo de red awsvpc para garantizar la conectividad de la tarea.
 
 ![diagrama1](../../images/Capitulo%201/ECS_2.png)
 
 
-Paso 3. Mantener la opción "Ninguno" en el rol de ejecución de tareas.
+Paso 3. Mantener la opción **Ninguno** en el rol de ejecución de tareas.
 
 ![diagrama1](../../images/Capitulo%201/ECS_3.png)
 

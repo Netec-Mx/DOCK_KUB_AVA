@@ -29,7 +29,7 @@ Paso 2. Crear 3 workers, los cuales tendran la tarea de ejecutar los contenedore
 ![imagen resultado](../images/Capitulo4/img_2_workers.png)
 
 ### Tarea 2. Añadir componentes internos que utiliza k8s en los master
-Paso 1. Se agrega en el master el componente **DB-ETCD**, el cual tiene la responsabilidad de almacenar y replicar el estado del clúster, incluyendo la configuración, metadatos y datos clave-valor, garantizando consistencia y alta disponibilidad.
+Paso 1. Agregar en el master el componente **DB-ETCD**, el cual tiene la responsabilidad de almacenar y replicar el estado del clúster, incluyendo la configuración, metadatos y datos clave-valor, garantizando consistencia y alta disponibilidad.
 
 ![imagen resultado](../images/Capitulo4/img_3_DB-ETCD.png)
 

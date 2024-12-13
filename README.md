@@ -13,7 +13,7 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 ---
  
 ## Índice:
- - [Práctica 1.1 Creación de Servicio ECS.](./Capitulo1/Capitulo1/lab/README.md)
+ - [Práctica 1.1 Creación de Servicio ECS.](./Capitulo1/lab/README.md)
    - **Descripción**:
    - Crear un chart personalizable con Helm.
    - Desplegar servicios con Helm.

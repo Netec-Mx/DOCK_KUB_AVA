@@ -53,51 +53,51 @@ Paso 10. Crear la clase RouteValidation en el package security.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_10.png)
 
-Paso 11. En este paso se crea la clase JwtProvider como componente de Spring para gestionar los tokens JWT. Incluye una clave secreta (Key secret) para firmar y validar los tokens, y utiliza el componente RouteValidator para verificar rutas protegidas, garantizando una seguridad robusta en la aplicación.
+Paso 11. En este paso se crea la clase JwtProvider como componente de Spring para gestionar los tokens JWT. Incluir una clave secreta (Key secret) para firmar y validar los tokens, y utilizar el componente RouteValidator para verificar rutas protegidas, garantizando una seguridad robusta en la aplicación.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_11.png)
 
-Paso 12. La clase JwtProvider es un componente encargado de gestionar los tokens JWT en la aplicación. Utiliza una clave secreta para firmar y validar los tokens, y el componente RouteValidator para verificar rutas protegidas, garantizando un control de acceso seguro.
+Paso 12. La clase JwtProvider es un componente encargado de gestionar los tokens JWT en la aplicación. Utilizar una clave secreta para firmar y validar los tokens y el componente RouteValidator para verificar rutas protegidas, garantizando un control de acceso seguro.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_12.png)
 
-Paso 13. se agrega un método en la clase JwtProvider para convertir un objeto LocalDateTime a un objeto Date. El método convertToLocalDateTimeToDate utiliza la zona horaria del sistema (ZoneId.systemDefault()) y transforma el LocalDateTime en un instante, que luego se convierte en un objeto Date.
+Paso 13. Agregar un método en la clase JwtProvider para convertir un objeto LocalDateTime a un objeto Date. El método convertToLocalDateTimeToDate utiliza la zona horaria del sistema (ZoneId.systemDefault()) y transforma el LocalDateTime en un instante, que luego se convierte en un objeto Date.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_13.png)
 
-Paso 14. Se implementa el método createToken en la clase JwtProvider para generar tokens JWT basados en los datos del usuario (AuthUser). Este método permitirá autenticar y autorizar usuarios de forma segura en el sistema.
+Paso 14. Implementar el método createToken en la clase JwtProvider para generar tokens JWT basados en los datos del usuario (AuthUser). Este método permitirá autenticar y autorizar usuarios de forma segura en el sistema.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_14.png)
 
-Paso 15. se inicializa la clave secreta (secret) en JwtProvider tras la creación del componente, generando una clave HMAC segura de 512 bits para gestionar los tokens JWT.
+Paso 15. Inicializar la clave secreta (secret) en JwtProvider tras la creación del componente, generando una clave HMAC segura de 512 bits para gestionar los tokens JWT.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_15.png)
 
-Paso 16. se ajusta el método createToken para incluir información personalizada en el token JWT. Se agregan los atributos id y role del usuario (authUser) a un mapa de reclamaciones (claims), y se define la fecha de inicio del token utilizando LocalDateTime.now(). 
+Paso 16. Ajustar el método createToken para incluir información personalizada en el token JWT. Agregar los atributos **id** y **role** del usuario (authUser) a un mapa de reclamaciones (claims), y definir la fecha de inicio del token utilizando LocalDateTime.now(). 
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_16.png)
 
-Paso 17. Se completa el método createToken en JwtProvider, agregando id y role del usuario a las claims del token JWT y estableciendo la fecha de inicio con LocalDateTime.now(). Esto asegura que el token incluya información del usuario y una marca de tiempo.
+Paso 17. Completar el método createToken en JwtProvider, agregando id y role del usuario a las claims del token JWT y estableciendo la fecha de inicio con LocalDateTime.now(). Esto asegura que el token incluya información del usuario y una marca de tiempo.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_17.png)
 
-Paso 18. El método getUserNameFromToken extrae y valida el nombre de usuario de un token JWT. Utiliza la clave secreta (secret) para verificar la firma del token y extraer su sujeto (subject). En caso de error, retorna un mensaje indicando que el token no es válido.
+Paso 18. El método getUserNameFromToken extrae y valida el nombre de usuario de un token JWT. Utilizar la clave secreta (secret) para verificar la firma del token y extraer su sujeto (subject). En caso de error, retorna un mensaje indicando que el token no es válido.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_18.png)
 
-Paso 19. El método `validate` verifica la validez de un token JWT usando la clave secreta y valida permisos según el objeto `RequestDto`. Si el token no es válido o los permisos no coinciden, retorna `false`; de lo contrario, confirma la autenticidad y permisos con `true`.
+Paso 19. El método `validate` verifica la validez de un token JWT usando la clave secreta y valida permisos según el objeto `RequestDto`. Si el token no es válido o los permisos no coinciden, retornar `false`; de lo contrario, confirmar la autenticidad y permisos con `true`.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_19.png)
 
-Paso 20. se crea la clase SecurityConfig, anotada con @Configuration y @EnableWebSecurity para habilitar la seguridad web en la aplicación. Incluye un método que define un SecurityFilterChain, deshabilitando la protección CSRF y permitiendo que todas las solicitudes sean accesibles sin autenticación. Esto configura las políticas de seguridad iniciales de la aplicación.
+Paso 20. Crear la clase SecurityConfig, anotada con @Configuration y @EnableWebSecurity para habilitar la seguridad web en la aplicación. Incluir un método que define un SecurityFilterChain, deshabilitando la protección CSRF y permitiendo que todas las solicitudes sean accesibles sin autenticación. Esto configura las políticas de seguridad iniciales de la aplicación.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_20.png)
 
-Paso 21. se crea la clase AuthService dentro del paquete com.auth.service. Esta clase será utilizada para implementar la lógica relacionada con la autenticación en el servicio de autorización de la aplicación. Por ahora, la clase se encuentra vacía, lista para ser desarrollada.
+Paso 21. Crear la clase AuthService dentro del paquete com.auth.service. Esta clase será utilizada para implementar la lógica relacionada con la autenticación en el servicio de autorización de la aplicación. Por ahora, la clase se encuentra vacía, lista para ser desarrollada.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_21.png)
 
-Paso 22. crea la clase NewUserDto, diseñada para manejar los datos de transferencia relacionados con la creación de un nuevo usuario. Se utiliza Lombok para reducir el código boilerplate, con anotaciones como @Data para generar getters y setters, @Builder para un patrón de construcción fluido, y constructores con y sin argumentos gracias a @AllArgsConstructor y @NoArgsConstructor. La clase incluye tres atributos: userName, password y role.
+Paso 22. Crear la clase NewUserDto, diseñada para manejar los datos de transferencia relacionados con la creación de un nuevo usuario. Utilizar Lombok para reducir el código boilerplate, con anotaciones como @Data para generar getters y setters, @Builder para un patrón de construcción fluido y constructores, con y sin, argumentos gracias a @AllArgsConstructor y @NoArgsConstructor. La clase incluye tres atributos: userName, password y role.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_22.png)
 

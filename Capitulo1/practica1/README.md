@@ -102,7 +102,7 @@ Paso 1. Crear una tarea (Task) en el servicio ECS.
 ![diagrama1](../../images/Capitulo%201/ECS_1.png)
 
 
-Paso 2. Asignar un nombre a la tarea y seleccionar Fargate (serverless) como el tipo de ejecución.
+Paso 2. se configura una definición de tarea en Amazon ECS con el nombre email_task_definition. Se selecciona AWS Fargate como el tipo de ejecución, lo que permite utilizar un entorno serverless para contenedores. Además, se especifican los requisitos de infraestructura: sistema operativo Linux, 1 vCPU, 3 GB de memoria y el modo de red awsvpc para garantizar la conectividad de la tarea.
 
 ![diagrama1](../../images/Capitulo%201/ECS_2.png)
 

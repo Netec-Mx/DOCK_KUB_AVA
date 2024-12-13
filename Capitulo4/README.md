@@ -5,7 +5,7 @@ Al finalizar la práctica, serás capaz de:
 - Comprender como se integran los componentes internos de Kubernetes.
 - Entender como arquitectar un sistema de alta disponibilidad en Kubernetes.
 
-## Objetivo Visual 
+## Objetivo visual 
 Crear un diagrama de arquitectura de Kubernetes con una alta disponibilidad junto con sus componentes.
 
 ![imagen resultado](../images/Capitulo4/diagrama_k8s.png)

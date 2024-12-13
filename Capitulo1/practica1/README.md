@@ -1,4 +1,4 @@
-# Práctica 1.
+# Práctica 1.2. Creación de servicio ECS
 
 ## Objetivo del laboratorio
 Al finalizar la práctica, serás capaz de:

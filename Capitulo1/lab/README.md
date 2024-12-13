@@ -91,7 +91,7 @@ Configurar el servicio `(service.yaml)` para exponer el microservicio y definir 
 
 Paso 1. Abrir el archivo `templates/service.yaml`.
 
-Paso 2. Configurar el servicio para usar un puerto accesible desde fuera del clúster
+Paso 2. Configurar el servicio para usar un puerto accesible desde fuera del clúster.
 ### YAML
 ```
 # templates/service.yaml
@@ -106,7 +106,7 @@ spec:
  ports:
    - port: {{ .Values.service.port }}
      targetPort: {{ .Values.containerPort }}
-     nodePort: 30081  # Puedes especificar el NodePort o dejar que Kubernetes lo asigne
+     nodePort: 30081  # Puedes especificar el NodePort o dejar que Kubernetes lo asigne.
  selector:
    app: {{ .Release.Name }}-ms-email
 ```

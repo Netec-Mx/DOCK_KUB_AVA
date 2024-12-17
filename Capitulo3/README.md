@@ -35,15 +35,15 @@ Paso 5. Implementar un repositorio para manejar operaciones de persistencia rela
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_5.png)
 
-Paso 6. Este DTO representará los datos del usuario que serán enviados entre el cliente y el servidor.
+Paso 6. AuthUserDto representará los datos del usuario que serán enviados entre el cliente y el servidor.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_6.png)
 
-Paso 7. Este DTO contendrá los datos necesarios para solicitudes como el inicio de sesión.
+Paso 7. TokeDto contendrá los datos necesarios para solicitudes como el inicio de sesión.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_7.png)
 
-Paso 8. Definir un PasswordEncoder para gestionar el cifrado de contraseñas.
+Paso 8. Definir en RequestDto un PasswordEncoder para gestionar el cifrado de contraseñas.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_8.png)
 

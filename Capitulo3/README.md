@@ -55,7 +55,7 @@ Paso 10. Crear la clase RouteValidation en el package security.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_10.png)
 
-Paso 11. En este paso se crea la clase **JwtProvider** como componente de Spring para gestionar los tokens JWT. Incluir una clave secreta (Key secret) para firmar y validar los tokens, de igual manera, utilizar el componente RouteValidator para verificar rutas protegidas, garantizando una seguridad robusta en la aplicación.
+Paso 11. Crear la clase **JwtProvider** como componente de Spring para gestionar los tokens JWT. Incluir una clave secreta (Key secret) para firmar y validar los tokens, de igual manera, utilizar el componente RouteValidator para verificar rutas protegidas, garantizando una seguridad robusta en la aplicación.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_11.png)
 

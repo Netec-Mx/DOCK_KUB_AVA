@@ -63,7 +63,7 @@ Paso 1. Ejecutar el comando para crear los múltiples contenedores. Utilizar el 
 
 ![diagrama1](../images/Capitulo5/Cap5_run_deploy.png)
 
-Paso 2. Usar el comando kubectl describe para inspeccionar los detalles del pod y verificar que los contenedores se hayan creado correctamente:
+Paso 2. Usar el comando `kubectl describe` para inspeccionar los detalles del pod y verificar que los contenedores se hayan creado correctamente:
 
 
 ![diagrama1](../images/Capitulo5/Cap5_run_deploy_1.png)
@@ -81,7 +81,7 @@ Paso 2. Usar el comando kubectl describe para inspeccionar los detalles del pod 
  docker pull postgres:latest
 ```
 
-2. Para obtener la IP de los Pods desplegados.
+2. Para obtener la IP de los Pods desplegados, utilizar el siguiente comando.
 
 ### shell
 ```shell

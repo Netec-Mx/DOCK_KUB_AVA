@@ -26,7 +26,7 @@ Este manifiesto se utiliza para describir el despliegue del servicio, incluyendo
 
 ![diagrama1](../images/Capitulo2/cap2_manifiesto1.png)
 
-Paso 2. Crear manifiesto para exponer el servicio. Este manifiesto define el servicio que expone el pod hacia el exterior del clúster o dentro del clúster, dependiendo del tipo de servicio configurado (por ejemplo, ClusterIP, NodePort o LoadBalancer).
+Paso 2. Crear un manifiesto para exponer el servicio. Este manifiesto define el servicio que expone el pod hacia el exterior del clúster o dentro del clúster, dependiendo del tipo de servicio configurado (por ejemplo, ClusterIP, NodePort o LoadBalancer).
 
 ![diagrama1](../images/Capitulo2/cap2_manifiesto2.png)
 

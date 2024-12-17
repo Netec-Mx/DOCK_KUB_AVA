@@ -18,7 +18,7 @@ Para realizar el diagrama de arquitectura de alta disonibilidad se sugiere usar 
 
 ### Tarea 1. Creacion Cluster de alta disponibilidad
 
-Nota : En Kubernetes, se recomienda usar un número impar de nodos maestros para asegurar consenso en el control plane (evitar empates en etcd) y un número par de nodos trabajadores para balancear la carga de las aplicaciones.
+### Nota : En Kubernetes, se recomienda usar un número impar de nodos maestros para asegurar consenso en el control plane (evitar empates en etcd) y un número par de nodos trabajadores para balancear la carga de las aplicaciones.
 
 Paso 1. Crear el nodo master, el cual tiene la responsabilidad de adminsitrar el clúster y ejecutar los componentes de autogestion de k8s.
 
@@ -34,7 +34,7 @@ Paso 1. Agregar en el master el componente **DB-ETCD**, el cual tiene la respons
 ![imagen resultado](../images/Capitulo4/img_3_DB-ETCD.png)
 
 Paso 2.
-Agregar en el master el componente **kube-controller-manager**, el cual tiene la responsabilidad de gestionar los controladores que regulan el estado deseado del clúster, como la replicación de pods, la gestión de nodos y la reconciliación de recursos.
+Agregar en el master el componente **kube-controller-manager**, el cual tiene la responsabilidad de gestionar los controladores que regulan el estado deseado del clúster: como la replicación de pods, la gestión de nodos y la reconciliación de recursos.
 
 ![imagen resultado](../images/Capitulo4/img_4_kube-controller-manager.png)
 

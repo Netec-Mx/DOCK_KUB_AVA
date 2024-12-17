@@ -57,7 +57,7 @@ Paso 1. Crear el repositorio en Docker Hub.
 ![diagrama1](../../images/Capitulo%201/practca1_docker_1.png)
 
 
-Paso 2. Nombrar el repositorio en Docker. PAra este caso se sugiere seguir el siguiente estandar nombreProyecto_nombreImagen
+Paso 2. Nombrar el repositorio en Docker. En este caso se sugiere seguir el siguiente estandar **nombreProyecto_nombreImagen**.
 
 ![diagrama1](../../images/Capitulo%201/practca1_docker_2.png)
 ![diagrama1](../../images/Capitulo%201/practca1_docker_3.png)
@@ -137,12 +137,12 @@ Paso 7. Asignar un nombre al clúster y no seleccionar servidores.
 
 
 Paso 8. Dar un nombre al clúster y no seleccionar los servidores. 
-El estandar de nomenclatura va ser  tiposervicio_ambiente
+El estandar de nomenclatura va ser **tiposervicio_ambiente**.
 
 ![diagrama1](../../images/Capitulo%201/ECS_8.png)
 
 
-Paso 9. Para este paso se realizara la configuracion de las tareas que se van a ejeuctar y para esta configuracion se realizara en el paso 10.
+Paso 9. Realizar la configuracion de las tareas que se van a ejeuctar. La configuración se realizara en el siguiente paso.
 
 ![diagrama1](../../images/Capitulo%201/ECS_9.png)
 
@@ -157,7 +157,7 @@ Paso 11. Seleccionar la tarea creada anteriormente y desplegarla.
 ![diagrama1](../../images/Capitulo%201/ECS_11.png)
 
 
-Paso 12. Una vez desplegado, localizar la IP pública en el clúster para realizar pruebas.
+Paso 12. Una vez desplegada, localizar la IP pública en el clúster para realizar pruebas.
 
 ![diagrama1](../../images/Capitulo%201/ECS_12.png)
 
@@ -174,7 +174,7 @@ Paso 14. En el clúster ubicamos la IP pública para realizar la petición del s
 ![diagrama1](../../images/Capitulo%201/ECS_15.png)
 
 
-Paso 15.  Prueba postman.
+Paso 15.  Probar postman.
 
 ![diagrama1](../../images/Capitulo%201/ECS_16.png)
 

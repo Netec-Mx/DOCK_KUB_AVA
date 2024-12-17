@@ -19,6 +19,8 @@ Paso 1. Acceder al enlace https://start.spring.io/ y generar un proyecto con las
 
 Paso 2. Añadir las dependencias de JWT necesarias para manejar la creación y validación de tokens.
 
+La dependencia io.jsonwebtoken permite la creación, firma y validación de tokens JWT, los cuales se utilizan comúnmente para la autenticación y autorización en aplicaciones. Con esta librería, es posible generar tokens que contienen información cifrada (claims) y validar su integridad para garantizar que no hayan sido manipulados. Esto facilita implementar mecanismos seguros de acceso a recursos protegidos.
+
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_2.png)
 
 Paso 3. Organizar el proyecto en paquetes, por ejemplo: entity, repository, security, service, controller, y dto.
@@ -116,7 +118,7 @@ Paso 3. Exponer los endpoints necesarios para las operaciones de autenticación 
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_25.png)
 
-Paso 4. El método debe aceptar credenciales de usuario y devolver un token JWT si son válidas.
+Paso 4. El método debe aceptar credenciales de usuario y devolver un token JWT si son válidas. Este endPoint se crea para que el usuario pueda ingresar al backend y si es correcto se retornara el token
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_26.png)
 
@@ -124,7 +126,7 @@ Paso 5. Agregar un endpoint en el controlador para validar si un token JWT sigue
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_27.png)
 
-Paso 6. Agregar un endpoint para permitir la creación de nuevos usuarios.
+Paso 6. Agregar un endpoint para permitir la creación de nuevos usuarios. Este endpoint es utulizado para crear el usuario en el backend y poder asi generar el token cuando se realice el login
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_28.png)
 

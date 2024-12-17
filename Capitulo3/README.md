@@ -55,7 +55,7 @@ Paso 10. Crear la clase RouteValidation en el package security.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_10.png)
 
-Paso 11. En este paso se crea la clase JwtProvider como componente de Spring para gestionar los tokens JWT. Incluir una clave secreta (Key secret) para firmar y validar los tokens, y utilizar el componente RouteValidator para verificar rutas protegidas, garantizando una seguridad robusta en la aplicación.
+Paso 11. En este paso se crea la clase JwtProvider como componente de Spring para gestionar los tokens JWT. Incluir una clave secreta (Key secret) para firmar y validar los tokens, de igual manera, utilizar el componente RouteValidator para verificar rutas protegidas, garantizando una seguridad robusta en la aplicación.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_11.png)
 
@@ -63,11 +63,11 @@ Paso 12. La clase JwtProvider es un componente encargado de gestionar los tokens
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_12.png)
 
-Paso 13. Agregar un método en la clase JwtProvider para convertir un objeto LocalDateTime a un objeto Date. El método convertToLocalDateTimeToDate utiliza la zona horaria del sistema (ZoneId.systemDefault()) y transforma el LocalDateTime en un instante, que luego se convierte en un objeto Date.
+Paso 13. Agregar un método en la clase JwtProvider para convertir un objeto LocalDateTime a un objeto Date. El método ***convertToLocalDateTimeToDate*** utiliza la zona horaria del sistema (ZoneId.systemDefault()) y transforma el ***LocalDateTime*** en un instante, que luego se convierte en un objeto Date.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_13.png)
 
-Paso 14. Implementar el método createToken en la clase JwtProvider para generar tokens JWT basados en los datos del usuario (AuthUser). Este método permitirá autenticar y autorizar usuarios de forma segura en el sistema.
+Paso 14. Implementar el método ***createToken*** en la clase JwtProvider para generar tokens JWT basados en los datos del usuario (AuthUser). Este método permitirá autenticar y autorizar usuarios de forma segura en el sistema.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_14.png)
 
@@ -83,7 +83,7 @@ Paso 17. Completar el método createToken en JwtProvider, agregando id y role de
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_17.png)
 
-Paso 18. El método getUserNameFromToken extrae y valida el nombre de usuario de un token JWT. Utilizar la clave secreta (secret) para verificar la firma del token y extraer su sujeto (subject). En caso de error, retorna un mensaje indicando que el token no es válido.
+Paso 18. El método ***getUserNameFromToken*** extrae y valida el nombre de usuario de un token JWT. Utilizar la clave secreta (secret) para verificar la firma del token y extraer su sujeto (subject). En caso de error, retorna un mensaje indicando que el token no es válido.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_18.png)
 
@@ -126,7 +126,7 @@ Paso 5. Agregar un endpoint en el controlador para validar si un token JWT sigue
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_27.png)
 
-Paso 6. Agregar un endpoint para permitir la creación de nuevos usuarios. Este endpoint es utulizado para crear el usuario en el backend y poder asi generar el token cuando se realice el login
+Paso 6. Agregar un endpoint para permitir la creación de nuevos usuarios. Este endpoint es utilizado para crear el usuario en el backend y así poder generar el token cuando se realice el login.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_28.png)
 

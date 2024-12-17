@@ -39,7 +39,7 @@ Paso 6. AuthUserDto representará los datos del usuario que serán enviados entr
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_6.png)
 
-Paso 7. TokeDto contendrá los datos necesarios para solicitudes como el inicio de sesión.
+Paso 7. TokenDto contendrá los datos necesarios para solicitudes como el inicio de sesión.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_7.png)
 

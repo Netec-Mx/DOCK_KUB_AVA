@@ -24,7 +24,11 @@ Paso 2. Ingresar a las configuraciones de la cuenta de correo y buscar la secci�
 
 ![diagrama1](../../images/Capitulo%201/practica1_gmial.png)
 
-Paso 3. Crear un nuevo token asignándole un nombre.
+Paso 3. Crear un nuevo token asignándole un nombre. Para este paso vamos a seguir el siguiente estandar:
+
+Token = manejo de JWT o token de autorizacion
+Lab = Laboratorio
+Netec= compañia o proposito del token
 
 ![diagrama1](../../images/Capitulo%201/practica1_gmial_1.png)
 
@@ -53,7 +57,7 @@ Paso 1. Crear el repositorio en Docker Hub.
 ![diagrama1](../../images/Capitulo%201/practca1_docker_1.png)
 
 
-Paso 2. Nombrar el repositorio en Docker.
+Paso 2. Nombrar el repositorio en Docker. PAra este caso se sugiere seguir el siguiente estandar nombreProyecto_nombreImagen
 
 ![diagrama1](../../images/Capitulo%201/practca1_docker_2.png)
 ![diagrama1](../../images/Capitulo%201/practca1_docker_3.png)
@@ -132,12 +136,13 @@ Paso 7. Asignar un nombre al clúster y no seleccionar servidores.
 ![diagrama1](../../images/Capitulo%201/ECS_7.png)
 
 
-Paso 8. Dar un nombre al clúster y no seleccionar los servidores.
+Paso 8. Dar un nombre al clúster y no seleccionar los servidores. 
+El estandar de nomenclatura va ser  tiposervicio_ambiente
 
 ![diagrama1](../../images/Capitulo%201/ECS_8.png)
 
 
-Paso 9. Configurar las tareas para ejecutarlas en Fargate con la última versión disponible.
+Paso 9. Para este paso se realizara la configuracion de las tareas que se van a ejeuctar y para esta configuracion se realizara en el paso 10.
 
 ![diagrama1](../../images/Capitulo%201/ECS_9.png)
 

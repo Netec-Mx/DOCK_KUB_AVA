@@ -75,13 +75,13 @@ Paso 2. Usar el comando `kubectl describe` para inspeccionar los detalles del po
 
 ### NOTA IMPORTANTE
 
-1 . Si se tarda en crear el contenedor, primero descargar la imagen con el siguiente comando.
+1 . Si se tarda en crear el contenedor, primero descargar la imagen con el siguiente comando:
 ### shell
 ```shell
  docker pull postgres:latest
 ```
 
-2. Para obtener la IP de los Pods desplegados, utilizar el siguiente comando.
+2. Para obtener la IP de los Pods desplegados, utilizar el siguiente comando:
 
 ### shell
 ```shell

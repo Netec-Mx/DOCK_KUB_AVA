@@ -79,7 +79,7 @@ Paso 16. Ajustar el método **createToken** para incluir información personaliz
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_16.png)
 
-Paso 17. Completar el método createToken en JwtProvider, agregando id y role del usuario a las claims del token JWT y estableciendo la fecha de inicio con LocalDateTime.now(). Esto asegura que el token incluya información del usuario y una marca de tiempo.
+Paso 17. Completar el método **createToken** en JwtProvider, agregando id y role del usuario a las claims del token JWT y estableciendo la fecha de inicio con LocalDateTime.now(). Esto asegura que el token incluya información del usuario y una marca de tiempo.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_17.png)
 

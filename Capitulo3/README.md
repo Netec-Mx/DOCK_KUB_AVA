@@ -43,7 +43,7 @@ Paso 7. TokenDto contendrá los datos necesarios para solicitudes como el inicio
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_7.png)
 
-Paso 8. Definir en RequestDto un PasswordEncoder para gestionar el cifrado de contraseñas.
+Paso 8. Definir un PasswordEncoder para gestionar el cifrado de contraseñas.
 
 ![diagrama1](../images/Capitulo3/cap3_ms_seg_8.png)
 

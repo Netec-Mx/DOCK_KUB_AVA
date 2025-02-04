@@ -1,4 +1,4 @@
-# Diagrama arquitectura K8s alta disponibilidad
+# Diagrama arquitectura k8s alta disponibilidad
 
 ## Objetivo de la práctica:
 Al finalizar la práctica, serás capaz de:
